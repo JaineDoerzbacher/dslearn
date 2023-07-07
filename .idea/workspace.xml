@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="Fix: Offer timestamp without time zone">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Content.java" afterDir="false" />
+    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="Task, Lesson, Content">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688760346002</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Task, Lesson, Content">
+      <created>1688761666517</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688761666517</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +193,7 @@
     <MESSAGE value="Enrollment, EnrollmentPK" />
     <MESSAGE value="Enrollment seed" />
     <MESSAGE value="Fix: Offer timestamp without time zone" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Offer timestamp without time zone" />
+    <MESSAGE value="Task, Lesson, Content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task, Lesson, Content" />
   </component>
 </project>
