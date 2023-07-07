@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="User, Role">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +111,14 @@
       <option name="presentableId" value="Default" />
       <updated>1688730220510</updated>
     </task>
+    <task id="LOCAL-00001" summary="User, Role">
+      <created>1688740314579</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688740314579</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,5 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="User, Role" />
+    <option name="LAST_COMMIT_MESSAGE" value="User, Role" />
   </component>
 </project>
