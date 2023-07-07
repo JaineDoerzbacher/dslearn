@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="Resource">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Section.java" afterDir="false" />
+    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="Section">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Deliver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Enrollment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Lesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/enums/DeliverStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/pk/EnrollmentPK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/enuns/ResourceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/enums/ResourceType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -54,6 +56,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.devsuperior.dslearnbds.entities.pk" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\dslearn\backend\src\main\resources" />
       <recent name="C:\workspace\dslearn\backend" />
@@ -134,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688756602851</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Section">
+      <created>1688757591391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688757591391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +165,7 @@
     <MESSAGE value="User, Role" />
     <MESSAGE value="Course" />
     <MESSAGE value="Resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resource" />
+    <MESSAGE value="Section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section" />
   </component>
 </project>
