@@ -20,8 +20,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_lesson")
-@Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Lesson implements Serializable {
+@Inheritance(strategy = InheritanceType.JOINED) //mapeamento de herança no banco de dados relacional (superclasse e subclasse) cria uma tabela para cada classe
+public abstract class Lesson implements Serializable { //abstract para não instanciar objetos do tipo Lesson (ou ela é content ou tak) a lesson nunca é só lesson
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -41,11 +41,11 @@ public abstract class Lesson implements Serializable {
     @JoinTable(name = "tb_lessons_done",
             joinColumns = @JoinColumn(name = "lesson_id"),
             inverseJoinColumns = {
-                    @JoinColumn(name = "user_id"),
+                    @JoinColumn(name = "user_id"), // user_id e offer_id são as chaves estrangeiras da tabela tb_lessons_done (tabela de associação)
                     @JoinColumn(name = "offer_id")
             }
     )
-    private Set<Enrollment> enrollmentsDone = new HashSet<>();
+    private Set<Enrollment> enrollmentsDone = new HashSet<>(); //set é um conjunto, não aceita repetição (enrollmentDone é um conjunto de enrollment para dizer quem terminou a aula)
 
     public Lesson() {
     }
