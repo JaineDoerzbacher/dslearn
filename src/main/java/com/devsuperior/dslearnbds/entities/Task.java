@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds;
+package com.devsuperior.dslearnbds.entities;
 
 import com.devsuperior.dslearnbds.entities.Lesson;
 import com.devsuperior.dslearnbds.entities.Section;
