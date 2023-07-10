@@ -1,7 +1,9 @@
 package com.devsuperior.dslearnbds.resources.exceptions;
 
 import com.devsuperior.dslearnbds.services.exceptions.DatabaseException;
+import com.devsuperior.dslearnbds.services.exceptions.ForbiddenException;
 import com.devsuperior.dslearnbds.services.exceptions.ResourseNotFoundException;
+import com.devsuperior.dslearnbds.services.exceptions.UnauthorizedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -28,7 +30,7 @@ public class ResorseExceptionHandler {
     }
 
     @ExceptionHandler(DatabaseException.class)
-    public ResponseEntity<StandardError> database(DatabaseException e, HttpServletRequest request){
+    public ResponseEntity<StandardError> database(DatabaseException e, HttpServletRequest request) {
         HttpStatus status = HttpStatus.BAD_REQUEST;
         StandardError err = new StandardError();
         err.setTimestamp(Instant.now()); // Para pegar o instante atual
@@ -40,7 +42,7 @@ public class ResorseExceptionHandler {
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<ValidationError> validation(MethodArgumentNotValidException e, HttpServletRequest request){
+    public ResponseEntity<ValidationError> validation(MethodArgumentNotValidException e, HttpServletRequest request) {
         HttpStatus status = HttpStatus.UNPROCESSABLE_ENTITY;
         ValidationError err = new ValidationError();
         err.setTimestamp(Instant.now()); // Para pegar o instante atual
@@ -49,11 +51,25 @@ public class ResorseExceptionHandler {
         err.setMessage(e.getMessage()); // Para pegar a mensagem
         err.setPath(request.getRequestURI()); // Para pegar o caminho da requisição
 
-        for (FieldError f :e.getBindingResult().getFieldErrors()){ // Para percorrer a lista de erros
-           err.addError(f.getField(), f.getDefaultMessage()); // Para adicionar o erro na lista de erros
+        for (FieldError f : e.getBindingResult().getFieldErrors()) { // Para percorrer a lista de erros
+            err.addError(f.getField(), f.getDefaultMessage()); // Para adicionar o erro na lista de erros
 
         }
         return ResponseEntity.status(status).body(err);  // Para retornar a resposta com o status de erro do HTTP
+    }
+
+    @ExceptionHandler(ForbiddenException.class)
+    public ResponseEntity<OAuthCustomError> forbidden(ForbiddenException e, HttpServletRequest request) {
+
+        OAuthCustomError err = new OAuthCustomError("Forbidden", e.getMessage()); // Para pegar o erro
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(err);  // Para retornar a resposta com o status de erro do HTTP
+    }
+
+    @ExceptionHandler(UnauthorizedException.class)
+    public ResponseEntity<OAuthCustomError> unauthorized(UnauthorizedException e, HttpServletRequest request) {
+
+        OAuthCustomError err = new OAuthCustomError("Forbidden", e.getMessage()); // Para pegar o erro
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(err);  // Para retornar a resposta com o status de erro do HTTP
     }
 
 }

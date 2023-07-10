@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="Exceptions, validation, security">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/dtos/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/UserService.java" afterDir="false" />
+    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="UserById">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/exceptions/OAuthCustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/exceptions/ForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/exceptions/UnauthorizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/exceptions/ResorseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/exceptions/ResorseExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,7 @@
       <recent name="C:\workspace\dslearn\backend" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.devsuperior.dslearnbds.services.exceptions" />
       <recent name="com.devsuperior.dslearnbds.components" />
       <recent name="com.devsuperior.dslearnbds.repositories" />
     </key>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689007178694</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="UserById">
+      <created>1689007595088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689007595088</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +237,7 @@
     <MESSAGE value="Task, Lesson, Content seed" />
     <MESSAGE value="Repositories" />
     <MESSAGE value="Exceptions, validation, security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exceptions, validation, security" />
+    <MESSAGE value="UserById" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserById" />
   </component>
 </project>
