@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="Repositories">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/components/JwtTokenEnhancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/UserResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/exceptions/FieldMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/exceptions/ResorseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/exceptions/StandardError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/exceptions/ValidationError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/exceptions/DatabaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/exceptions/ResourseNotFoundException.java" afterDir="false" />
+    <list default="true" id="8e76f1c5-a5a9-4619-80d0-11930f3a3ecf" name="Changes" comment="Exceptions, validation, security">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/dtos/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/resources/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devsuperior/dslearnbds/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688995861561</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Exceptions, validation, security">
+      <created>1689007178694</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689007178694</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +228,7 @@
     <MESSAGE value="Task, Lesson, Content" />
     <MESSAGE value="Task, Lesson, Content seed" />
     <MESSAGE value="Repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repositories" />
+    <MESSAGE value="Exceptions, validation, security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exceptions, validation, security" />
   </component>
 </project>
